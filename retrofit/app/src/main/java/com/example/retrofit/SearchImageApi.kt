@@ -9,7 +9,7 @@ private const val BASE_URL = "https://api.thecatapi.com"
 object RetrofitInstance {
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create())
+        .addConverterFactory(MoshiConverterFactory.create())
         .build()
 
 
